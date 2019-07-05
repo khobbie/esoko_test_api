@@ -25,6 +25,7 @@ below.
     $ npm install nodemon -g
 
 * To run node server which has a hot reloader from nodemon.
+  
           $ nodemon server.js
 
 ## MySql Database
@@ -101,10 +102,11 @@ below.
 
 * Update Group with id
   * PUT <http://localhost:3000/group>
-    {
-        "group_name": "Teachers",
-        "group_id": 1
-    }
+      
+        {
+            "group_name": "Teachers",
+            "group_id": 1
+        }
 
 * Search for a group with name  and get its people
   * GET <http://localhost:3000/assign_group/group/:group_name>
