@@ -101,6 +101,10 @@ below.
 
 * Update Group with id
   * PUT <http://localhost:3000/group>
+    {
+        "group_name": "Teachers",
+        "group_id": 1
+    }
 
 * Search for a group with name  and get its people
   * GET <http://localhost:3000/assign_group/group/:group_name>
