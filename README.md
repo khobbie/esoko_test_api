@@ -19,7 +19,7 @@ below.
 
 ## Install Project
 
-    $git clone https://github.com/ORG/PROJECT.git
+    $git clone https://github.com/khobbie/esoko_test_api.git
     $ cd PROJECT
     $ npm install
     $ npm install nodemon -g
