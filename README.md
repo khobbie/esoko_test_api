@@ -37,17 +37,49 @@ below.
 
 * Retrieve Every person :
   * GET <http://localhost:3000/person>
-
+  
 * Retrieve person with id :
   * GET <http://localhost:3000/person/:id>
 
 * Save a new Person :
   * POST <http://localhost:3000/person/add>
+
+        {
+            "person_first_name": "James",
+            "person_last_name": "Amo",
+            "person_email": "james@test.com",
+            "person_phone_no": "1111111111",
+            "person_gender": "Male",
+            "person_age": 12,
+            "person_picture": "jamesPic.png",
+            "person_country": "Ghana",
+            "person_address": "Accra",
+            "person_occupation": "IT MANAGER",
+            "person_hobbies": "Listening to music",
+            "person_comment": "i ama happy"
+        }
+
 * Update Person with id and person info
   * PUT <http://localhost:3000/person>
+  
+          {
+            "person_first_name": "James",
+            "person_last_name": "Amo",
+            "person_email": "james@test.com",
+            "person_phone_no": "1111111111",
+            "person_gender": "Male",
+            "person_age": 12,
+            "person_picture": "jamesPic.png",
+            "person_country": "Ghana",
+            "person_address": "Accra",
+            "person_occupation": "IT MANAGER",
+            "person_hobbies": "Listening to music",
+            "person_comment": "i ama happy"
+        }
 * Delete a person with  person id
-       *  DELETE <http://localhost:3000/person>
-                {"person_id": "1"}
+* DELETE <http://localhost:3000/person>
+
+          {"person_id": "1"}
 * Retrieve Every Group
   * GET <http://localhost:3000/group>
 
@@ -55,9 +87,20 @@ below.
   * GET <http://localhost:3000/group/:id>
 * Create a group
   * POST <http://localhost:3000/group/add>
+
+        {
+            "group_name": "Typists"
+        }
 * ASSIGN GROUP TO PERSON
   * POST <http://localhost:3000/assign_group>
+  
+        {
+            "group_id": 1,
+            "person_id": 2
+        }
+
 * Update Group with id
   * PUT <http://localhost:3000/group>
+
 * Search for a group with name  and get its people
   * GET <http://localhost:3000/assign_group/group/:group_name>
