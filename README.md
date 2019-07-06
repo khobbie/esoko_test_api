@@ -25,8 +25,8 @@ below.
     $ npm install nodemon -g
 
 * To run node server which has a hot reloader from nodemon.
-  
-          $ nodemon server.js
+
+        $ nodemon server.js
 
 ## MySql Database
 
@@ -46,6 +46,7 @@ below.
   * POST <http://localhost:3000/person/add>
 
         {
+            "person_id": 1,
             "person_first_name": "James",
             "person_last_name": "Amo",
             "person_email": "james@test.com",
