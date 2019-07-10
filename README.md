@@ -46,7 +46,7 @@ below.
   * POST <http://localhost:3000/person/add>
 
         {
-            "person_id": 1,
+            
             "person_first_name": "James",
             "person_last_name": "Amo",
             "person_email": "james@test.com",
@@ -65,6 +65,7 @@ below.
   * PUT <http://localhost:3000/person>
   
           {
+            "person_id": 1,
             "person_first_name": "James",
             "person_last_name": "Amo",
             "person_email": "james@test.com",
@@ -95,7 +96,7 @@ below.
         }
 * ASSIGN GROUP TO PERSON
   * POST <http://localhost:3000/assign_group>
-  
+
         {
             "group_id": 1,
             "person_id": 2
@@ -103,7 +104,7 @@ below.
 
 * Update Group with id
   * PUT <http://localhost:3000/group>
-      
+
         {
             "group_name": "Teachers",
             "group_id": 1
